@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Pettekas Peluqueria Canina</title>
+
+</head>
+
+<body>
+    <div id="centrar">
+        <header class="header">
+            <a href="../../index.html" class="header__a">
+                <img src="../images/logo.png" alt="pettekas peluqueria canina" class="header__logo">
+            </a>
+
+            <nav class="menu" name="menu">
+
+                <ul class="menu__ul">
+                    <li class="menu__home menu__li"><a href="../../index.html" class="menu__a">Inicio</a></li>
+                    <li class="menu__li"><a href="./la_pelu.html" class="menu__a">La Pelu</a></li>
+                    <li class="menu__li"><a href="./service.html" class="menu__a">Servicios</a></li>
+                    <li class="menu__li"><a href="./galeria.html" class="menu__a">Galería</a></li>
+                    <li class="menu__li"><a href="./contact.html" class="menu__a">Contacto</a></li>
+                </ul>
+
+            </nav>
+
+        </header>
+
+        <main>
+
+            <h1><img src="../images/dogclaw.png" alt="icono de garra" id="h1__img">La Peluquería<img src="../images/dogclaw.png" alt="icono de garra" id="h1__img"></h1>
+            <p>Por favor, completar el formulario a continuación para solicitar un turno o a través de nuestros medios de contacto y a la brevedad nos comunicaremos.</p>
+            <section class="turnform">
+
+                <form action="" method="post" class="turnform__form">
+                    <h3 id="h3_turnform">Solicitud de Turnos</h3>
+                    <input type="text" name="name" id="name" placeholder="Nombre y Apellido" class="turnform__input">
+                    <input type="number" name="name" id="name" placeholder="Teléfono de contacto" class="turnform__input">
+                    <input type="email" name="name" id="name" placeholder="email" class="turnform__input">
+                    <input type="text" name="petname" id="petname" placeholder="Nombre de la Mascota" class="turnform__input">
+                    <select name="tamano_mascota" id="tamano_mascota">
+                        <option value="tamano">Tamaño</option>
+                        <option value="tiny_pet">Mini h/3kg.</option>
+                        <option value="small">Pequeño h/10kg</option>
+                        <option value="medium">mediano h/20kg</option>
+                        <option value="large">Grande h/30g</option>
+                        <option value="xlarge">Gigante +40kg</option>
+                    </select>
+
+                    <select name="service" id="service">
+                        <option value="servicio">Servicio</option>
+                        <option value="bano">Baño</option>
+                        <option value="corte">Corte</option>
+                        <option value="bano_corte">Baño y Corte</option>
+                        <option value="corte_raza">Corte de Raza (incluye baño)</option>
+                     </select>
+                    <input type="submit" value="turno" class="turnform__btm">
+                </form>
+
+            </section>
+            <section class="locate">
+                <div class="locate-gmap">
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d344.8196148945412!2d-58.571380441494796!3d-34.69267986031476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7b5ade4b063%3A0x2699650391e3d746!2sPetteka%C2%B4s%20-%20Peluqueria%20Canina!5e0!3m2!1ses!2sar!4v1642471274300!5m2!1ses!2sar"
+                        allowfullscreen="active" loading="lazy" class="gmap__iframe">
+                        </iframe>
+                </div>
+                <div class="locate-contact">
+                    <ul class="locate__ul">
+                        <li>
+                            <h3 class="locate__h3">Ubicación</h3>
+                        </li>
+                        <li class="locate__li">Centenera 3497, San Justo, La Matanza, <br> Buenos Aires, Argentina.-</li>
+                        <li>
+                            <h3 class="locate__h3">Contactanos</h3>
+                        </li>
+                        <li class="locate__li">Telefono: 011-4157-7907</li>
+                        <li class="locate__li"><a href="https://www.facebook.com/Petteka-s-1515503741836589" class="locate__a">Facebook</a></li>
+                        <li class="locate__li"><a href="https://wa.me/+541141577907" class="locate__a">Whatsapp</a></li>
+                        <li class="locate__li"><a href="https://m.me/1515503741836589" class="locate__a">Messenger</a></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+
+        <footer class="footer">
+            <p class="footer__p">Todos los derechos reservados</p>
+        </footer>
+    </div>
+</body>
+
+</html>
