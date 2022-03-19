@@ -151,7 +151,6 @@ a:active {
 
 .menu .menu__li:hover {
     background-color: #f45e30;
-    font-size: 1.5em;
     color: #000;
     border-radius: 5px;
     padding: 1px 1px 4px 4px;
