@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
     <link rel="manifest" href="./images/favicon/site.webmanifest">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 
     <title>Pettekas - Peluqueria Canina</title>
 
@@ -39,24 +39,33 @@
 
         <main>
 
-            <section class="main__index">
+            <section id="main__service">
                 <div class="encabezado__h1">
                     <img src="./images/dogclaw.png" alt="icono de garra">
-                    <h1>Nuestros Servicios</h1>
+                    <h1>La Peluquería</h1>
                     <img src="./images/dogclaw.png" alt="icono de garra">
                 </div>
+                <div class="service__bloque1">
+                    <h2>Nuestras instalaciones</h2>
+                    <p class="service__p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti corrupti maiores totam obcaecati fugit, facilis consequuntur labore debitis laboriosam sint, eveniet eius excepturi, ad voluptatem unde quisquam a aperiam recusandae.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias quas porro natus laudantium maxime ipsa rem delectus, velit ullam impedit. Eligendi asperiores veniam dolore non at a repellat? Hic, quibusdam.</p>
+                </div>
 
-                <h2 class="h2__general">Caracteristicas puntuales del servicio</h2>
-                <p class="p__general">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti corrupti maiores totam obcaecati fugit, facilis consequuntur labore debitis laboriosam sint, eveniet eius excepturi, ad voluptatem unde quisquam a aperiam recusandae. Lorem
-                    ipsum, dolor sit amet consectetur adipisicing elit. Alias quas porro natus laudantium maxime ipsa rem delectus, velit ullam impedit. Eligendi asperiores veniam dolore non at a repellat? Hic, quibusdam.</p>
-                <img src="./images/portada_1.jpg" alt="imagen de perro" class="main__img">
+                <picture>
+                    <img src="./images/service/corte_raza.webp" alt="imagen de perro" class="service__img1">
+                </picture>
 
-                <h2 class="h2__general">Caracteristicas puntuales del servicio</h2>
-                <p class="p__general">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti corrupti maiores totam obcaecati fugit, facilis consequuntur labore debitis laboriosam sint, eveniet eius excepturi, ad voluptatem unde quisquam a aperiam recusandae. Lorem
-                    ipsum, dolor sit amet consectetur adipisicing elit. Alias quas porro natus laudantium maxime ipsa rem delectus, velit ullam impedit. Eligendi asperiores veniam dolore non at a repellat? Hic, quibusdam.</p>
-                <img src="./images/portada_2.jpg" alt="imagen de perro" class="main__img">
+                <div class="service__bloque2">
+                    <h2>Nuestro equipamiento</h2>
+                    <p class="service__p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti corrupti maiores totam obcaecati fugit, facilis consequuntur labore debitis laboriosam sint, eveniet eius excepturi, ad voluptatem unde quisquam a aperiam recusandae.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias quas porro natus laudantium maxime ipsa rem delectus, velit ullam impedit. Eligendi asperiores veniam dolore non at a repellat? Hic, quibusdam.</p>
+                </div>
+                <picture>
+                    <img src="./images/service/baño_perro.jpg" alt="imagen de perro" class="service__img2">
+                </picture>
+
                 <div class="turn-buttom">
-                    <a href="./assets/views/contact.html" class="turn-buttom__a">TURNOS</a>
+                    <a href="./contact.html" class="turn-buttom__a">TURNOS</a>
                 </div>
 
             </section>
@@ -66,7 +75,7 @@
 
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d344.8196148945412!2d-58.571380441494796!3d-34.69267986031476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7b5ade4b063%3A0x2699650391e3d746!2sPetteka%C2%B4s%20-%20Peluqueria%20Canina!5e0!3m2!1ses!2sar!4v1642471274300!5m2!1ses!2sar"
                     allowfullscreen="active" loading="lazy" class="gmap__iframe">
-                </iframe>
+                    </iframe>
             </div>
             <div class="locate-contact">
                 <ul>
@@ -78,17 +87,22 @@
                         <h3>Contactanos</h3>
                     </li>
                     <li>Telefono: 011-4157-7907</li>
-                    <li><a href="https://www.facebook.com/Petteka-s-1515503741836589" class="locate__a">Facebook</a></li>
-                    <li><a href="https://wa.me/+541141577907" class="locate__a">Whatsapp</a></li>
-                    <li><a href="https://m.me/1515503741836589" class="locate__a">Messenger</a></li>
+                    <li><a href="https://www.facebook.com/Petteka-s-1515503741836589">Facebook</a></li>
+                    <li><a href="https://wa.me/+541141577907">Whatsapp</a></li>
+                    <li><a href="https://m.me/1515503741836589">Messenger</a></li>
                 </ul>
             </div>
         </section>
+        <footer>
+            <section class="pie">
 
-        <footer class="footer">
-            <p class="footer__p">Todos los derechos reservados</p>
+                <a href="../index.html" class="header__a">
+                    <img src="./images/logo.png" alt="pettekas peluqueria canina" class="header__logo">
+                </a>
+                <p>TODOS LOS DERECHOS RESERVADOS</p>
+            </section>
         </footer>
-        </div>
+    </section>
 </body>
 
 </html>
