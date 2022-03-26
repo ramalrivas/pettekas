@@ -10,6 +10,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
     <link rel="manifest" href="./images/favicon/site.webmanifest">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- FIN Bootstrap CSS -->
     <link rel="stylesheet" href="../css/styles.css">
 
     <title>Pettekas - Peluqueria Canina</title>
@@ -17,9 +20,10 @@
 </head>
 
 <body>
+
     <section id="page">
 
-        <header class="header">
+        <header id="gradh">
 
             <a href="../index.html" class="header__a">
                 <img src="./images/logo.png" alt="pettekas peluqueria canina" class="header__logo">
@@ -27,7 +31,7 @@
         </header>
         <nav class="menu">
 
-            <ul class="menu__ul">
+            <ul id="contact__menu" class="menu__ul">
                 <li class="menu__home menu__li"><a href="../index.html" class="menu__a">Inicio</a></li>
                 <li class="menu__li"><a href="./la_pelu.html" class="menu__a">La Pelu</a></li>
                 <li class="menu__li"><a href="./service.html" class="menu__a">Servicios</a></li>
@@ -36,81 +40,150 @@
             </ul>
 
         </nav>
-        </header>
 
-        <main>
-            <section id="main__contact">
+        <main id="gradm">
 
-                <div class="encabezado__h1">
-                    <img src="./images/dogclaw.png" alt="icono de garra">
-                    <h1>Contactanos</h1>
-                    <img src="./images/dogclaw.png" alt="icono de garra">
-                </div>
-                <section class="turnform">
+            <div class="encabezado__h1">
+                <img src="./images/dogclaw.png" alt="icono de garra">
+                <h1 id="reebot_bts">Solicita Tu Turno</h1>
+                <img src="./images/dogclaw.png" alt="icono de garra">
+            </div>
 
-                    <form action="" method="post">
-                        <h3>Solicitud de Turnos</h3>
-                        <input type="text" name="name" id="name" placeholder="Nombre y Apellido" class="turnform__input">
-                        <input type="number" name="name" id="name" placeholder="Teléfono de contacto" class="turnform__input">
-                        <input type="email" name="name" id="name" placeholder="email" class="turnform__input">
-                        <input type="text" name="petname" id="petname" placeholder="Nombre de la Mascota" class="turnform__input">
+            <div id="contact1" class="main__bloque1">
 
-                        <select name="tamano_mascota" id="tamano_mascota">
-                        <option value="tamano">Tamaño</option>
-                        <option value="tiny_pet">Mini h/3kg.</option>
-                        <option value="small">Pequeño h/10kg</option>
-                        <option value="medium">mediano h/20kg</option>
-                        <option value="large">Grande h/30g</option>
-                        <option value="xlarge">Gigante +40kg</option>
-                         </select>
+                <section id="contact1_form" class="textp">
+                    <h2>Datos del Dueño</h2>
+                    <form>
 
-                        <select name="service" id="service">
-                        <option value="servicio">Servicio</option>
-                        <option value="bano">Baño</option>
-                        <option value="corte">Corte</option>
-                        <option value="bano_corte">Baño y Corte</option>
-                        <option value="corte_raza">Corte de Raza (incluye baño)</option>
-                         </select>
-                        <input type="submit" value="turno" class="turnform__btm">
+                        <div class="form-group">
+                            <!-- Nombre Completo -->
+                            <label for="full_name_id" class="control-label">Nombre y Apellido</label>
+                            <input type="text" class="form-control" id="full_name_id" name="full_name" placeholder="Juan Perez">
+                        </div>
+
+                        <div class="form-group">
+                            <!-- Domicilio -->
+                            <label for="street1_id" class="control-label">Domicilio</label>
+                            <input type="text" class="form-control" id="street1_id" name="street1" placeholder="Calle, Piso, Departamento">
+                        </div>
+
+                        <div class="form-group">
+                            <!-- Localidad -->
+                            <label for="locate_id" class="control-label">Localidad</label>
+                            <input type="text" class="form-control" id="street2_id" name="street2" placeholder="Ciudad/barrio">
+                        </div>
+
+                        <div class="form-group">
+                            <!-- Partido-->
+                            <label for="city_id" class="control-label">Partido</label>
+                            <input type="text" class="form-control" id="city_id" name="city" placeholder="Ciudad/Partido">
+                        </div>
+
+                        <div class="form-group">
+                            <!-- Telefono de Contacto-->
+                            <label for="tnumber_id" class="control-label">Telefono Movil</label>
+                            <input type="number" class="form-control" id="zip_id" name="zip" placeholder="Telefono Movil">
+                        </div>
+                        <div class="form-group">
+                            <!-- Telefono de Contacto-->
+                            <label for="mnumber_id" class="control-label">Telefono de Contacto</label>
+                            <input type="number" class="form-control" id="zip_id" name="zip" placeholder="Telefono Fijo">
+                        </div>
+                        <div class="form-group">
+                            <!-- Correo Electronico-->
+                            <label for="zip_id" class="control-label">Correo Electronico</label>
+                            <input type="email" class="form-control" id="zip_id" name="zip" placeholder="@Correo Electrónico">
+                        </div>
                     </form>
-
                 </section>
-                <section class="contac_map">
-                    <div class="locate__gmap">
+            </div>
 
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d344.8196148945412!2d-58.571380441494796!3d-34.69267986031476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7b5ade4b063%3A0x2699650391e3d746!2sPetteka%C2%B4s%20-%20Peluqueria%20Canina!5e0!3m2!1ses!2sar!4v1642471274300!5m2!1ses!2sar"
-                            allowfullscreen="active" loading="lazy" class="gmap__iframe">
-                        </iframe>
-                    </div>
-                    <div class="locate-contact">
-                        <ul>
-                            <li>
-                                <h3>Ubicación</h3>
-                            </li>
-                            <li>Centenera 3497, San Justo, La Matanza, Buenos Aires, Argentina.-</li>
-                            <li>
-                                <h3>Contactanos</h3>
-                            </li>
-                            <li>Telefono: 011-4157-7907</li>
-                            <li><a href="https://www.facebook.com/Petteka-s-1515503741836589">Facebook</a></li>
-                            <li><a href="https://wa.me/+541141577907">Whatsapp</a></li>
-                            <li><a href="https://m.me/1515503741836589">Messenger</a></li>
-                        </ul>
-                    </div>
+            <div id="contact2" class="main__bloque2">
+                <section id="contact2__form" class="textp">
+                    <h2>Datos del Cliente</h2>
+                    <form>
+
+                        <div class="form-group">
+                            <!-- Nombre Completo -->
+                            <label for="petfull_name_id" class="control-label">Nombre de tu Mascota</label>
+                            <input type="text" class="form-control" id="full_name_id" name="full_name" placeholder="Nombre de tu Mascota">
+                        </div>
+
+                        <div class="form-group">
+                            <!-- Tipo de Servicio -->
+                            <label for="typeservice_id" class="control-label">Domicilio</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Tipo de Servicio</option>
+                                <option value="1">Baño</option>
+                                <option value="2">Baño Medicado</option>
+                                <option value="3">Baño y Corte</option>
+                                <option value="4">Corte de Raza (Incluye Baño)</option>
+                                
+                              </select>
+                        </div>
+
+                        <div class="form-group">
+                            <!-- Tamaño-->
+                            <label for="typeservice_id" class="control-label">Tamaño</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Tamaño/Peso</option>
+                                <option value="1">Mini (Hasta 3 kilos)</option>
+                                <option value="2">Pequeño (Hasta 10 kilos)</option>
+                                <option value="3">Mediano (Hasta 20 kilos)</option>
+                                <option value="4">Grande (Hasta 30 kilos)</option>
+                                <option value="5">Gigante (+ de 35 kilos)</option>
+                              </select>
+                        </div>
+
+                    </form>
                 </section>
+
+            </div>
+
+            <div class="turn-buttom">
+                <a href="#" class="turn-buttom__a">Solicitar Turno</a>
+            </div>
+
+            <section class="locate">
+                <div class="locate__gmap">
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d344.8196148945412!2d-58.571380441494796!3d-34.69267986031476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7b5ade4b063%3A0x2699650391e3d746!2sPetteka%C2%B4s%20-%20Peluqueria%20Canina!5e0!3m2!1ses!2sar!4v1642471274300!5m2!1ses!2sar"
+                        allowfullscreen="active" loading="lazy" class="gmap__iframe">
+                    </iframe>
+                </div>
+                <div class="locate-contact">
+                    <ul>
+                        <li>
+                            <h3>Ubicación</h3>
+                        </li>
+                        <li>Centenera 3497, San Justo, La Matanza, Buenos Aires, Argentina.-</li>
+                        <li>
+                            <h3>Contactanos</h3>
+                        </li>
+                        <li>Telefono: 011-4157-7907</li>
+                        <li><a href="https://www.facebook.com/Petteka-s-1515503741836589">Facebook</a></li>
+                        <li><a href="https://wa.me/+541141577907">Whatsapp</a></li>
+                        <li><a href="https://m.me/1515503741836589">Messenger</a></li>
+                    </ul>
+                </div>
+            </section>
+
         </main>
 
-
-        <footer>
+        <footer id="gradf">
             <section class="pie">
 
-                <a href="../index.html" class="header__a">
+                <a href="./index.html" class="header__a">
                     <img src="./images/logo.png" alt="pettekas peluqueria canina" class="header__logo">
                 </a>
                 <p>TODOS LOS DERECHOS RESERVADOS</p>
             </section>
         </footer>
-        </section>
+    </section>
+
+    <!-- bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- FIN bootstrap JS -->
 </body>
 
 </html>
