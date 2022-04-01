@@ -25,7 +25,7 @@
     --colornav: #ffd5c9;
     --colormain: linear-gradient(to bottom, #ffd5c9, #f6b2a0, #eb9079, #dd6c54, #cd4631);
     --colorlocate: #cd4631;
-    --colorfooter: linear-gradient(to bottom, #ffd5c9, #f6b2a0, #eb9079, #dd6c54, #cd4631);
+    --colorfooter: #cd4631;
     --colorgallery: #c3d6e1;
     --colorturnbtm: #81adc8;
     /*fuentes*/
@@ -33,10 +33,10 @@
     --font-secondary: 'Roboto', sans-serif;
     /*tamaño de las fuentes*/
     --text-nav: 1.8em;
-    --text-h1: 1.87em;
-    --text-h2: 1.75em;
-    --text-h3: 1.5em;
-    --text-p: 0.8em;
+    --text-h1: 2.5em;
+    --text-h2: 2.1em;
+    --text-h3: 1.8em;
+    --text-p: 1.2em;
     --text-a: 1em;
     /*color de las fuentes*/
     --colormenu: #CD4631;
@@ -53,11 +53,10 @@
 
 #page {
     display: grid;
-    grid-auto-columns: 1fr;
-    grid-template-columns: 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33%;
-    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
     gap: 0px 0px;
-    grid-template-areas: "header header header header header header header header header header header header" "nav nav nav nav nav nav nav nav nav nav nav nav" "main main main main main main main main main main main main" "footer footer footer footer footer footer footer footer footer footer footer footer";
+    grid-template-areas: "header" "nav" "main" "loc" "footer";
 }
 
 #page>header {
@@ -69,32 +68,11 @@
 }
 
 #page>main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto auto auto;
-    gap: 0px 0px;
-    grid-template-areas: "ptitle ptitle" "bloque1 bloque1" "bloque2 bloque2" "turn turn" "locate locate";
     grid-area: main;
 }
 
-.encabezado__h1 {
-    grid-area: ptitle;
-}
-
-.main__bloque1 {
-    grid-area: bloque1;
-}
-
-.main__bloque2 {
-    grid-area: bloque2;
-}
-
-.turn-buttom {
-    grid-area: turn;
-}
-
-.locate {
-    grid-area: locate;
+#page>.locate {
+    grid-area: loc;
 }
 
 #page>footer {
@@ -133,7 +111,7 @@ a:active {
 /*header*/
 
 .header {
-    min-width: 320px;
+    width: 100%;
 }
 
 #gradh {
@@ -141,7 +119,7 @@ a:active {
 }
 
 .header__a {
-    display: flex;
+    display: block;
     text-align: center;
     position: relative;
 }
@@ -169,8 +147,6 @@ a:active {
 
 .menu__li {
     display: inline-block;
-    margin-left: 9px;
-    margin-right: 9px;
     padding: 5px 10px;
     font-family: var(--font-primary);
     text-align: center;
@@ -197,7 +173,12 @@ a:active {
 /*fin del Menu de Navegación*/
 
 
-/* Main Index*/
+/* Main*/
+
+main {
+    display: flex;
+    flex-direction: column;
+}
 
 #gradm {
     background-image: var(--colormain)
@@ -209,94 +190,82 @@ a:active {
     justify-self: center;
     color: var(--colorh1);
     font-size: var(--text-h1);
+    width: 100%;
 }
 
 .encabezado__h1 img {
-    width: 40px;
-    height: 40px;
+    width: 1.5em;
+    height: 1.5em;
 }
 
 .main__bloque1 {
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    padding: 0.313rem;
+    max-width: 90%;
 }
 
 .main__bloque2 {
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
     align-self: center;
-    padding-bottom: 15px;
+    padding: 0.313rem;
+    padding-bottom: 0.9rem;
+    max-width: 90%;
 }
 
-#main__index h2 {
+.textp {
+    width: 100%;
+}
+
+.textp h2 {
     text-align: left;
-    align-self: center;
-    justify-self: center;
 }
 
 .main__p {
-    width: 350px;
+    width: 100%;
     text-align: left;
     text-indent: 1.5em;
 }
 
+.main__bloque1 picture {
+    max-width: 100%;
+}
+
+.main__bloque2 picture {
+    max-width: 100%;
+}
+
 .main__img1 {
-    height: 200px;
-    width: auto;
+    width: 100%;
 }
 
 .main__img2 {
-    height: 200px;
-    width: auto;
+    width: 100%;
 }
 
 
 /*Fin de Main index*/
 
 
-/*main Service y La Pelu*/
-
-#service1 {
-    display: flex;
-    flex-direction: column;
-}
-
-#service2 {
-    display: flex;
-    flex-direction: column;
-}
-
-#service__txt {
-    width: 660px;
-}
-
-#service_p {
-    width: 660px;
-}
-
-#service__img1 {
-    width: 660px;
-    height: auto;
-}
-
-#service__img2 {
-    width: 660px;
-    height: auto;
-}
-
-
-/*fin Service Main y La Pelu*/
-
-
 /*Galeria de fotos*/
 
+#gallery_1 {
+    width: 50%;
+}
+
+#gallery_2 {
+    width: 50%;
+}
+
 #gallery_pic {
-    width: 700px;
     align-items: center;
-    margin-left: 50px;
+    padding: 0;
 }
 
 #gallery_pic img {
-    width: 150px;
+    width: 20%;
 }
 
 
@@ -305,22 +274,44 @@ a:active {
 
 /* Contactanos*/
 
-#contact__menu {
-    padding-left: 0px;
-    margin-bottom: 0px;
+#form_user {
+    align-items: center;
+    display: table-caption;
+    width: 100%;
 }
 
-#contact1_form input,
+#form_pet {
+    align-items: center;
+    display: table-caption;
+    width: 100%;
+}
+
 select {
-    width: 600px;
+    font-size: var(--text-p);
+    font-family: var(--font-secondary);
+    width: 25em;
+    margin: 2px;
 }
 
-#contact2 {
-    padding-top: 10px;
+input {
+    font-family: var(--font-secondary);
+    font-size: var(--text-p);
+    text-align: center;
+    margin: 2px;
+    width: 25em;
+    padding: 2px;
 }
 
-.form-select {
-    width: 600px;
+::placeholder {
+    font-family: var(--font-secondary);
+    font-size: var(--text-p);
+    text-align: center;
+}
+
+option {
+    font-family: var(--font-secondary);
+    font-size: var(--text-p);
+    text-align: center;
 }
 
 
@@ -361,38 +352,36 @@ select {
 
 .locate {
     display: inline-flex;
-    padding-top: 45px;
-    padding-bottom: 30px;
+    align-self: center;
     background-color: var(--colorlocate);
+    padding-top: 2.675rem;
+    padding-bottom: 1.25rem;
+}
+
+.locate picture {
+    width: 43%;
+    text-align: right;
+}
+
+.locate img {
     width: 100%;
 }
 
-.locate__gmap {
-    text-align: left;
-    margin-bottom: 0;
-}
-
 .locate-contact {
-    height: 220px;
+    padding: 0.625rem;
+    width: 45%;
 }
 
 .locate-contact h3 {
     text-align: left;
 }
 
-.gmap__iframe {
-    height: 217px;
-    margin-left: 15px;
-}
-
 .locate-contact ul {
     text-align: left;
-    margin-left: 10px;
     list-style: none;
 }
 
 .locate-contact li {
-    width: 300px;
     font-family: var(--font-secondary);
     font-size: var(--text-p);
     list-style: none;
@@ -409,10 +398,6 @@ select {
 
 
 /*footer*/
-
-#gradf {
-    background-image: var(--colorfooter)
-}
 
 footer {
     background-color: var(--colorfooter);
@@ -435,407 +420,206 @@ footer {
 /*end footer*/
 
 
-/*Query*/
+/* --------------------- FIN DE LA PAGINA ---------------------- */
+
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 1080px) {
+    /*tamaño de las fuentes*/
+     :root {
+        --text-nav: 1.6em;
+        --text-h1: 2.2em;
+        --text-h2: 1.8em;
+        --text-h3: 1.5em;
+        --text-p: 1.2em;
+        --text-a: 1em;
+    }
+    .main__bloque1 {
+        max-width: 90%;
+    }
+    .main__bloque2 {
+        max-width: 90%;
+    }
+    .locate picture {
+        width: 53%;
+    }
+    .locate-contact {
+        padding: 0.625rem;
+        width: 35%;
+    }
+}
 
 @media only screen and (max-width: 720px) {
+    /*tamaño de las fuentes*/
      :root {
-        /*tamaño de las fuentes*/
-        --text-nav: 1.4em;
-        --text-h1: 1.7em;
+        --text-nav: 1.5em;
+        --text-h1: 2em;
         --text-h2: 1.6em;
+        --text-h3: 1.5em;
+        --text-p: 1.1em;
+        --text-a: 1em;
+    }
+    .main__bloque1 {
+        max-width: 90%;
+    }
+    .main__bloque2 {
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    /*tamaño de las fuentes*/
+     :root {
+        --text-nav: 1.1em;
+        --text-h1: 1.8em;
+        --text-h2: 1.2em;
+        --text-h3: 1.5em;
+        --text-p: 0.7em;
+        --text-a: 1em;
+    }
+    .menu__ul {
+        padding: 0;
+        margin-bottom: 0px;
+    }
+    .menu__li {
+        padding: 5px 5px;
+    }
+    .main__bloque1 {
+        max-width: 90%;
+    }
+    .main__bloque2 {
+        max-width: 90%;
+    }
+    /*localización y mapa*/
+    .locate {
+        flex-direction: column;
+    }
+    .locate picture {
+        width: 60%;
+    }
+    .locate-contact {
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /*tamaño de las fuentes*/
+     :root {
+        --text-nav: 1em;
+        --text-h1: 1.55em;
+        --text-h2: 1.25em;
         --text-h3: 1.5em;
         --text-p: 0.8em;
         --text-a: 1em;
     }
-    /*MAIN */
-    /* Main Index*/
-    .encabezado__h1 {
-        display: inline-flex;
-        align-self: center;
-        justify-self: center;
+    .header__a img {
+        width: 40%;
+    }
+    .menu__ul {
+        padding: 0;
+        margin-bottom: 0px;
+    }
+    .menu__li {
+        padding: 5px 5px;
     }
     .encabezado__h1 img {
-        width: 35px;
-        height: 35px;
+        width: 1.1em;
+        height: 1.1em;
     }
     .main__bloque1 {
         flex-direction: column;
-        align-items: center;
+        max-width: 90%;
     }
     .main__bloque2 {
         flex-direction: column;
-        align-self: center;
-        padding-bottom: 15px;
+        max-width: 90%;
     }
-    .main__p {
-        width: 490px;
-    }
-    .main__img1 {
-        height: 355px;
-        width: auto;
-    }
-    .main__img2 {
-        height: 355px;
-        width: auto;
-    }
-    /*Fin de Main index*/
-    /*main Service*/
-    #service1 {
-        display: flex;
-        flex-direction: column;
-    }
-    #service2 {
-        display: flex;
-        flex-direction: column;
-    }
-    #service__txt {
-        width: 550px;
-    }
-    #service_p {
-        width: 550px;
-    }
-    #service__img1 {
-        width: 550px;
-        height: auto;
-    }
-    #service__img2 {
-        width: 550px;
-        height: auto;
-    }
-    /*fin Service Main*/
-    /*Galeria de fotos*/
-    #gallery_pic {
-        width: 600px;
-        align-items: center;
-        margin-left: 50px;
-    }
-    #gallery_pic img {
-        width: 120px;
-    }
-    /*fin de Galeria de fotos*/
-    /*sector ubicacion y mapa*/
+    /*localización y mapa*/
     .locate {
         flex-direction: column;
-        padding-top: 45px;
-        padding-bottom: 0px;
     }
-    .locate__gmap {
-        text-align: left;
-        margin-bottom: 0;
+    .locate picture {
+        width: 89%;
     }
     .locate-contact {
-        padding-top: 10px;
-        height: 220px;
+        width: 89%;
     }
-    /*fin sector ubicacion y mapa*/
 }
 
-@media only screen and (max-width: 640px) {
+@media screen and (max-width: 390px) {
+    /*iphone 12 pro*/
+    /*tamaño de las fuentes*/
      :root {
-        /*tamaño de las fuentes*/
-        --text-nav: 1.5em;
-        --text-h1: 1.8em;
-        --text-h2: 1.6em;
+        --text-nav: 0.8em;
+        --text-h1: 1.7em;
+        --text-h2: 1.3em;
         --text-h3: 1.5em;
-        --text-p: 0.9em;
+        --text-p: 0.7em;
         --text-a: 1em;
     }
-    /*MAIN */
-    /* Main Index*/
-    .encabezado__h1 {
-        display: inline-flex;
-        align-self: center;
-        justify-self: center;
-    }
-    .encabezado__h1 img {
-        width: 30px;
-        height: 30px;
-    }
-    .main__bloque1 {
-        flex-direction: column;
-        align-items: center;
-    }
-    .main__bloque2 {
-        flex-direction: column;
-        align-self: center;
-        padding-bottom: 15px;
-    }
-    .main__p {
-        width: 550px;
-    }
-    .main__img1 {
-        height: 400px;
-        width: auto;
-    }
-    .main__img2 {
-        height: 400px;
-        width: auto;
-    }
-    /*Fin de Main index*/
-    /*main Service*/
-    #service1 {
-        display: flex;
-        flex-direction: column;
-    }
-    #service2 {
-        display: flex;
-        flex-direction: column;
-    }
-    #service__txt {
-        width: 550px;
-    }
-    #service_p {
-        width: 550px;
-    }
-    #service__img1 {
-        width: 550px;
-        height: auto;
-    }
-    #service__img2 {
-        width: 550px;
-        height: auto;
-    }
-    /*fin Service Main*/
-    /*sector ubicacion y mapa*/
-    .locate {
-        flex-direction: column;
-        padding-top: 45px;
-        padding-bottom: 0px;
-    }
-    .locate__gmap {
-        text-align: left;
+    .menu__ul {
+        padding: 0;
         margin-bottom: 0px;
-        width: 450px;
     }
-    .gmap__iframe {
-        margin-left: 0px;
-        width: 450px;
-    }
-    .locate-contact {
-        width: 450px;
-        margin-left: 5px;
-        padding-top: 10px;
-        height: 200px;
-    }
-    /*fin sector ubicacion y mapa*/
-}
-
-@media only screen and (max-width: 480px) {
-     :root {
-        /*tamaño de las fuentes*/
-        --text-nav: 1.2em;
-        --text-h1: 1.5em;
-        --text-h2: 1.4em;
-        --text-h3: 1.5em;
-        --text-p: 0.9em;
-        --text-a: 1.1em;
-    }
-    /*Menu de Navegación*/
     .menu__li {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    /*fin del Menu de Navegación*/
-    /*MAIN */
-    /* Main Index*/
-    .encabezado__h1 {
-        padding-top: 5px;
-        display: inline-flex;
-        align-self: center;
-        justify-self: center;
+        padding: 5px 5px;
     }
     .encabezado__h1 img {
-        width: 27px;
-        height: 27px;
+        width: 1em;
+        height: 1em;
     }
     .main__bloque1 {
-        flex-direction: column;
-        align-items: center;
+        max-width: 90%;
     }
     .main__bloque2 {
-        flex-direction: column;
-        align-self: center;
-        padding-bottom: 15px;
+        max-width: 90%;
     }
-    .main__p {
-        width: 350px;
-        padding-bottom: 5px;
-    }
-    .main__img1 {
-        height: 260px;
-        width: auto;
-    }
-    .main__img2 {
-        height: 260px;
-        width: auto;
-    }
-    /*Fin de Main index*/
-    /*main Service*/
-    #service1 {
-        display: flex;
-        flex-direction: column;
-    }
-    #service2 {
-        display: flex;
-        flex-direction: column;
-    }
-    #service__txt {
-        width: 410px;
-    }
-    #service_p {
-        width: 410px;
-    }
-    #service__img1 {
-        width: 410px;
-        height: auto;
-    }
-    #service__img2 {
-        width: 410px;
-        height: auto;
-    }
-    /*fin Service Main*/
-    /*Galeria de fotos*/
-    #gallery_pic {
-        width: 310px;
-        align-items: center;
-        margin-left: 0px;
-    }
-    #gallery_pic img {
-        width: 150px;
-    }
-    /*fin de Galeria de fotos*/
-    /*FIN DE MAIN*/
-    /*sector ubicacion y mapa*/
-    .locate {
-        flex-direction: column;
-        padding-top: 45px;
-        padding-bottom: 0px;
-    }
-    .locate__gmap {
-        text-align: left;
-        margin-bottom: 0px;
-        width: 350px;
-    }
-    .gmap__iframe {
-        margin-left: 0px;
-        width: 350px;
+    /*localización y mapa*/
+    .locate picture {
+        width: 89%;
     }
     .locate-contact {
-        padding-top: 10px;
-        width: 375px;
-        height: 200px;
+        width: 90%;
     }
-    /*fin sector ubicacion y mapa*/
 }
 
 @media only screen and (max-width: 320px) {
+    /*tamaño de las fuentes*/
      :root {
-        /*tamaño de las fuentes*/
-        --text-nav: 0.9em;
-        --text-h1: 1.2em;
+        --text-nav: 0.8em;
+        --text-h1: 1.33em;
         --text-h2: 1.1em;
-        --text-h3: 1.5em;
+        --text-h3: 1em;
         --text-p: 0.6em;
         --text-a: 1em;
     }
-    /*Menu de Navegación*/
-    .menu__li {
-        margin-left: 2px;
-        margin-right: 2px;
-        padding: 4px 1px 4px 1px;
+    .header__a img {
+        width: 50%;
     }
-    /*fin del Menu de Navegación*/
-    /*MAIN */
-    /* Main Index*/
-    .encabezado__h1 {
-        padding-top: 5px;
-        padding-bottom: 5px;
-        display: inline-flex;
-        align-self: center;
-        justify-self: center;
+    .menu__li {
+        padding: 3px 3px;
     }
     .encabezado__h1 img {
-        width: 27px;
-        height: 27px;
+        width: 1.1em;
+        height: 1.1em;
     }
     .main__bloque1 {
         flex-direction: column;
-        align-items: center;
+        max-width: 90%;
     }
     .main__bloque2 {
         flex-direction: column;
-        align-self: center;
-        padding-bottom: 15px;
+        max-width: 90%;
     }
-    .main__p {
-        width: 285px;
-        padding-bottom: 5px;
-    }
-    .main__img1 {
-        height: 205px;
-        width: auto;
-    }
-    .main__img2 {
-        height: 205px;
-        width: auto;
-    }
-    /*Fin de Main index*/
-    /*main Service*/
-    #service1 {
-        display: flex;
-        flex-direction: column;
-    }
-    #service2 {
-        display: flex;
-        flex-direction: column;
-    }
-    #service__txt {
-        width: 290px;
-    }
-    #service_p {
-        width: 290px;
-    }
-    #service__img1 {
-        width: 290px;
-        height: auto;
-    }
-    #service__img2 {
-        width: 290px;
-        height: auto;
-    }
-    /*fin Service Main*/
-    /*Galeria de fotos*/
-    #gallery_pic {
-        width: 310px;
-        align-items: center;
-        margin-left: 0 auto;
-    }
-    #gallery_pic img {
-        width: 250px;
-    }
-    /*fin de Galeria de fotos*/
-    /*FIN DE MAIN*/
-    /*sector ubicacion y mapa*/
+    /*localización y mapa*/
     .locate {
         flex-direction: column;
-        padding-top: 45px;
-        background-color: var(--colorlocate);
-        padding-bottom: 0px;
     }
-    .locate__gmap {
-        text-align: left;
-        margin-bottom: 0;
-        width: 290px;
-    }
-    .gmap__iframe {
-        margin-left: 0px;
-        width: 290px;
+    .locate picture {
+        width: 80%;
     }
     .locate-contact {
-        padding-top: 10px;
-        height: 200px;
-        padding-left: 0px;
-        text-align: left;
+        width: 85%;
     }
-    /*fin sector ubicacion y mapa*/
 }
