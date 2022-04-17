@@ -1,0 +1,16 @@
+.ntwkbar {
+    position: fixed;
+    width: 5%;
+    z-index: 2000;
+    right: 1vw;
+    top: 50%;
+    ul {
+        list-style: none;
+    }
+    li {
+        padding: 0.5vh;
+    }
+    img {
+        width: 5vw;
+    }
+}

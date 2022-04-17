@@ -1,0 +1,21 @@
+.turn-buttom {
+    background-color: map-get($pallete, colorturnbtm);
+    border-radius: 5px;
+    padding: 5px 5px;
+    width: fit-content;
+    position: relative;
+    margin: auto;
+    margin-bottom: -34px;
+    box-shadow: 3px 3px 3px 3px;
+    a {
+        font-family: $font-primary;
+        font-size: map-get($fsize, text-turnb);
+        font-weight: 900;
+        text-decoration: none;
+        color: #000000;
+    }
+    a:hover {
+        border-radius: 5px;
+        color: map-get($pallete, colorturn);
+    }
+}

@@ -1,0 +1,31 @@
+.locate {
+    display: flex;
+    flex-direction: column;
+    background-color: map-get($pallete, colorlocate);
+    padding-top: 3.8rem;
+    padding-bottom: 1.25rem;
+    width: 100vw;
+    .locate__contact {
+        width: 68%;
+        h3 {
+            text-align: left;
+            font-family: $font-primary;
+            font-size: map-get($fsize, text-h3);
+        }
+        p {
+            text-align: left;
+            font-family: $font-secondary;
+            font-size: map-get($fsize, text-p);
+        }
+    }
+    .locate__gmap {
+        overflow: hidden;
+        height: 50vh;
+        width: 68%;
+        margin-bottom: 50px;
+        iframe {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

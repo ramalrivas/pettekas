@@ -1,0 +1,38 @@
+/*fuentes*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/*generales*/
+
+@import './misc/variables';
+@import './misc/mixins';
+@import './misc/normalize';
+
+/*Header, Menu, Botones*/
+
+@import './partials/main';
+@import './partials/header';
+@import './partials/navbar';
+@import './partials/ntwkbar';
+@import './partials/turnbuttom';
+
+/*views*/
+
+@import './views/inicio';
+@import './views/la_pelu';
+@import './views/service';
+@import './views/gallery';
+@import './views/contact';
+
+/*locate*/
+
+@import './partials/locate';
+
+/*footer*/
+
+@import './partials/footer';
+
+/*media queries*/
+
+@import './misc/mqueries';

@@ -1,0 +1,14 @@
+/*fuentes*/
+
+$font-primary: 'Fredoka',
+sans-serif;
+$font-secondary: 'Roboto',
+sans-serif;
+
+/* tamaño de fuentes*/
+
+$fsize:(text-nav: 2.8em, text-h1: 3em, text-h2: 3.8em, text-h3: 2.5em, text-p: 1.3em, text-a: 0.9em, text-turnb: 3em, );
+
+/*paleta de colores*/
+
+$pallete:( colorheader: linear-gradient(to top, #ffd5c9, #f6b2a0, #eb9079, #dd6c54, #cd4631), colornav: #ffd5c9, colormain: linear-gradient(to bottom, #ffd5c9, #f6b2a0, #eb9079, #dd6c54, #cd4631), colorlocate: #cd4631, colorfooter: #cd4631, colorgallery: #c3d6e1, colorturnbtm: #81adc8, colormenu: #CD4631, colorsocialred: #fff, colorp: #000, colorh1: #DEA47E, colorh2: #cd4631, colorh3: #a09292, colorturn: #fff, );

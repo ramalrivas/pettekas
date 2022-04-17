@@ -1,0 +1,19 @@
+/*header*/
+
+header {
+    width: 100%;
+    background-image: map-get($pallete, colorheader);
+    a {
+        display: block;
+        text-align: center;
+        position: relative;
+    }
+    img:hover {
+        transition: 5s;
+        transform: rotate(355deg);
+        transition-timing-function: ease;
+    }
+}
+
+
+/*Fin del Header*/

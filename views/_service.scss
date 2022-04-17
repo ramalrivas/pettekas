@@ -1,0 +1,70 @@
+.service__h1 {
+    font-family: $font-primary;
+    ;
+    display: inline-flex;
+    align-self: center;
+    justify-self: center;
+    color: map-get($pallete, colorh1);
+    font-size: map-get($fsize, text-h1);
+    width: 100%;
+    img {
+        width: 1.9em;
+        height: 1.9em;
+    }
+}
+
+.service1 {
+    @include flex-column-center();
+    padding: 0.313rem;
+    max-width: 69%;
+    picture {
+        max-width: 100%;
+    }
+    h2 {
+        font-family: $font-primary;
+        font-size: map-get($fsize, text-h2);
+        color: map-get($pallete, colorh2);
+        text-align: left;
+    }
+    img {
+        width: 100%;
+    }
+    p {
+        width: 100%;
+        font-family: $font-secondary;
+        width: 100%;
+        text-align: left;
+        text-indent: 1.5em;
+        font-size: map-get($fsize, text-p);
+    }
+}
+
+.service2 {
+    @include flex-column-center();
+    padding: 0.313rem;
+    padding-bottom: 3rem;
+    max-width: 69%;
+    picture {
+        max-width: 100%;
+    }
+    h2 {
+        font-family: $font-primary;
+        font-size: map-get($fsize, text-h2);
+        color: map-get($pallete, colorh2);
+        text-align: left;
+    }
+    img {
+        width: 100%;
+    }
+    p {
+        width: 100%;
+        font-family: $font-secondary;
+        width: 100%;
+        text-align: left;
+        text-indent: 1.5em;
+        font-size: map-get($fsize, text-p);
+    }
+}
+
+
+/*Fin de Main INICIO*/

@@ -5,14 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Solicita un turno para la Peluquería Canina asi no que esperar en el local y poder atender a tu mascota con la exclusividad que se merece.">
+    <meta name="keywords" content="Peluquería, Canina, Mascota, Turnos peluqueria Canina, Perros.-">
+    <meta name="copyright" content="Todos los derechos reservados.">
+    <meta name="author" content="Ramiro Rivas">
     <link rel="shortcut icon" href="./images/favicon/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
     <link rel="manifest" href="./images/favicon/site.webmanifest">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/stylesass.css">
 
-    <title>Pettekas - Peluqueria Canina</title>
+    <title>Solicitud de Turnos </title>
 
 </head>
 
@@ -20,88 +24,61 @@
 
     <section id="page">
 
-        <header id="gradh">
-
-            <a href="../index.html" class="header__a">
-                <img src="./images/logo.png" alt="pettekas peluqueria canina" class="header__logo">
+        <header>
+            <a href="../index.html">
+                <img src="./images/logo.png" alt="pettekas peluqueria canina">
             </a>
         </header>
-        <nav class="menu">
+        <nav>
 
-            <ul class="menu__ul">
-                <li class="menu__home menu__li"><a href="../index.html" class="menu__a">Inicio</a></li>
-                <li class="menu__li"><a href="./la_pelu.html" class="menu__a">La Pelu</a></li>
-                <li class="menu__li"><a href="./service.html" class="menu__a">Servicios</a></li>
-                <li class="menu__li"><a href="./galeria.html" class="menu__a">Galería</a></li>
-                <li class="menu__li"><a href="./contact.html" class="menu__a">Contacto</a></li>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./la_pelu.html">La Pelu</a></li>
+                <li><a href="./service.html">Servicios</a></li>
+                <li><a href="./galeria.html">Galería</a></li>
+                <li><a href="./contact.html">Contacto</a></li>
             </ul>
 
         </nav>
 
-        <main id="gradm" id=" contact_form">
-
-            <div class="encabezado__h1">
+        <main>
+            <div class="contact__title">
                 <img src="./images/dogclaw.png" alt="icono de garra">
-                <h1 id="reebot_bts">Turnos</h1>
+                <h1>Turnos</h1>
                 <img src="./images/dogclaw.png" alt="icono de garra">
             </div>
 
-            <div class="main__bloque1">
-
-                <section class="textp">
-                    <h2>Datos del Dueño</h2>
-                    <div id="form_user">
-                        <form>
-                            <!-- Nombre Completo -->
-
-                            <input type="text" id="full_name_id" name="full_name" placeholder="Nombre y Apellido">
-
-                            <!-- Domicilio -->
-
-                            <input type="text" id="street1_id" name="street1" placeholder="Calle, Piso, Departamento">
-
-                            <!-- Localidad -->
-
-                            <input type="text" id="street2_id" name="street2" placeholder="Ciudad/barrio">
-
-                            <!-- Partido-->
-
-                            <input type="text" id="city_id" name="city" placeholder="Ciudad/Partido">
-
-                            <!-- Telefono de Contacto-->
-
-                            <input type="number" id="zip_id" name="zip" placeholder="Telefono Movil">
-
-                            <!-- Telefono de Contacto-->
-
-                            <input type="number " id="zip_id " name="zip " placeholder="Telefono Fijo ">
-
-                            <!-- Correo Electronico-->
-
-                            <input type="email" id="zip_id" name="zip" placeholder="@Correo Electrónico">
-
-                        </form>
+            <div class="contact__form">
+                <form>
+                    <div class="contact__form__h2">
+                        <h2>Formulario de Turnos</h2>
                     </div>
-                </section>
-            </div>
-
-            <div class="main__bloque2">
-                <section class="textp">
-                    <h2>Datos del Cliente</h2>
-                    <div id="form_pet">
-                        <form>
-                            <!-- Nombre Completo -->
-                            <input type="text" id="full_name_id" name="full_name" placeholder="Nombre de tu Mascota">
-                            <!-- Tipo de Servicio -->
-                            <select>
+                    <!-- Nombre Completo -->
+                    <input type="text" id="full_name_id" name="full_name" placeholder="Nombre y Apellido">
+                    <!-- Domicilio -->
+                    <input type="text" id="street1_id" name="street1" placeholder="Calle, Piso, Departamento">
+                    <!-- Localidad -->
+                    <input type="text" id="street2_id" name="street2" placeholder="Ciudad/barrio">
+                    <!-- Partido-->
+                    <input type="text" id="city_id" name="city" placeholder="Ciudad/Partido">
+                    <!-- Telefono de Contacto-->
+                    <input type="number" id="zip_id" name="zip" placeholder="Telefono Movil">
+                    <!-- Telefono de Contacto-->
+                    <input type="number " id="zip_id " name="zip " placeholder="Telefono Fijo ">
+                    <!-- Correo Electronico-->
+                    <input type="email" id="zip_id" name="zip" placeholder="@Correo Electrónico">
+                    <!-- Nombre Completo -->
+                    <input type="text" id="full_name_id" name="full_name" placeholder="Nombre de tu Mascota">
+                    <!-- Tipo de Servicio -->
+                    <select>
                                 <option selected>Tipo de Servicio</option>
                                 <option value="1">Baño</option>
                                 <option value="2">Baño Medicado</option>
                                 <option value="3">Baño y Corte</option>
                                 <option value="4">Corte de Raza (Incluye Baño)</option>
-                            </select>
-                            <!-- Tamaño-->
-                            <select>
+                                </select>
+                    <!-- Tamaño-->
+                    <select>
                                 <option selected>Tamaño/Peso</option>
                                 <option value="1">Mini (Hasta 3 kilos)</option>
                                 <option value="2">Pequeño (Hasta 10 kilos)</option>
@@ -109,52 +86,55 @@
                                 <option value="4">Grande (Hasta 30 kilos)</option>
                                 <option value="5">Gigante (+ de 35 kilos)</option>
                               </select>
-                        </form>
-                    </div>
-                </section>
-
+                </form>
             </div>
+    </section>
 
-            <div class="turn-buttom">
-                <a href="#" class="turn-buttom__a">Solicitar Turno</a>
-            </div>
+    </div>
 
-            <section class="locate">
-                <div class="locate__gmap">
+    <div class="turn-buttom">
+        <a href="#">Solicitar Turno</a>
+    </div>
+    <div class="ntwkbar">
+        <ul>
 
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d344.8196148945412!2d-58.571380441494796!3d-34.69267986031476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7b5ade4b063%3A0x2699650391e3d746!2sPetteka%C2%B4s%20-%20Peluqueria%20Canina!5e0!3m2!1ses!2sar!4v1642471274300!5m2!1ses!2sar"
-                        allowfullscreen="active" loading="lazy" class="gmap__iframe">
-                    </iframe>
-                </div>
-                <div class="locate-contact">
-                    <ul>
-                        <li>
-                            <h3>Ubicación</h3>
-                        </li>
-                        <li>Centenera 3497, San Justo, La Matanza, Buenos Aires, Argentina.-</li>
-                        <li>
-                            <h3>Contactanos</h3>
-                        </li>
-                        <li>Telefono: 011-4157-7907</li>
-                        <li><a href="https://www.facebook.com/Petteka-s-1515503741836589">Facebook</a></li>
-                        <li><a href="https://wa.me/+541141577907">Whatsapp</a></li>
-                        <li><a href="https://m.me/1515503741836589">Messenger</a></li>
-                    </ul>
-                </div>
-            </section>
+            <li>
+                <a href="https://wa.me/+541141577907"><img src="./images/ntwk_icon/whatsapp.png" alt="Dejanos un mensaje en WhatsApp"></a>
+            </li>
+            <li>
+                <a href="https://m.me/1515503741836589"><img src="./images/ntwk_icon/messenger.png" alt="Contactate por Messenger"></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/Petteka-s-1515503741836589"><img src="./images/ntwk_icon/facebook.png" alt="Seguinos en Facebook"></a>
+            </li>
+        </ul>
+    </div>
+    </ul>
+    </div>
+    <div class="locate">
+        <div class="locate__contact">
+            <h3>Ubicación</h3>
+            <p>Centenera 3497, San Justo, La Matanza, Buenos Aires, Argentina.-</p>
+        </div>
+
+        <div class="locate__gmap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d344.8196148945412!2d-58.571380441494796!3d-34.69267986031476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7b5ade4b063%3A0x2699650391e3d746!2sPetteka%C2%B4s%20-%20Peluqueria%20Canina!5e0!3m2!1ses!2sar!4v1642471274300!5m2!1ses!2sar"
+                allowfullscreen="active" loading="lazy" class="gmap__iframe">
+            </iframe>
+        </div>
 
         </main>
 
-        <footer id="gradf">
-            <section class="pie">
+        <footer>
+            <section>
 
-                <a href="./index.html" class="header__a">
-                    <img src="./images/logo.png" alt="pettekas peluqueria canina" class="header__logo">
+                <a href="./index.html">
+                    <img src="./images/logo.png" alt="pettekas peluqueria canina">
                 </a>
                 <p>TODOS LOS DERECHOS RESERVADOS</p>
             </section>
         </footer>
-    </section>
+        </section>
 
 </body>
 

@@ -1,0 +1,80 @@
+/*footer*/
+
+footer {
+    width: 100%;
+    background-color: map-get($pallete, colorfooter);
+    p {
+        font-family: $font-secondary;
+        font-size: map-get($fsize, text-p);
+        text-align: center;
+    }
+    a {
+        display: block;
+        text-align: center;
+        position: relative;
+        font-family: $font-secondary;
+        font-size: map-get($fsize, text-p);
+        text-align: center;
+    }
+    img:hover {
+        transition: 5s;
+        transform: rotate(355deg);
+        transition-timing-function: ease;
+    }
+}
+
+
+/*end footer*/
+
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 1080px) {
+    footer {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    footer {
+        font-size: 1.1em;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    footer {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    footer {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    footer {
+        font-size: 0.7em;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    /*Samsung Fold*/
+    footer {
+        font-size: 0.7em;
+        img {
+            width: 60%;
+        }
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    /*Samsung Fold*/
+    footer {
+        font-size: 0.6em;
+        img {
+            width: 50%;
+        }
+    }
+}

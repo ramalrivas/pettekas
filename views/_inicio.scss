@@ -1,0 +1,68 @@
+.encabezado__h1 {
+    font-family: $font-primary;
+    display: inline-flex;
+    align-self: center;
+    justify-self: center;
+    color: map-get($pallete, colorh1);
+    font-size: map-get($fsize, text-h1);
+    width: 100%;
+    img {
+        width: 1.8em;
+        height: 1.8em;
+    }
+}
+
+.main__bloque1 {
+    @include flex-column-center();
+    padding: 0.313rem;
+    max-width: 70%;
+    picture {
+        max-width: 100%;
+    }
+    h2 {
+        font-family: $font-primary;
+        font-size: map-get($fsize, text-h2);
+        color: map-get($pallete, colorh2);
+        text-align: left;
+    }
+    img {
+        width: 100%;
+    }
+    p {
+        width: 100%;
+        font-family: $font-secondary;
+        width: 100%;
+        text-align: left;
+        text-indent: 1.5em;
+        font-size: map-get($fsize, text-p);
+    }
+}
+
+.main__bloque2 {
+    @include flex-column-center();
+    padding: 0.313rem;
+    padding-bottom: 2rem;
+    max-width: 70%;
+    picture {
+        max-width: 100%;
+    }
+    h2 {
+        font-family: $font-primary;
+        ;
+        font-size: map-get($fsize, text-h2);
+        color: map-get($pallete, colorh2);
+        text-align: left;
+    }
+    img {
+        width: 100%;
+    }
+    p {
+        font-family: $font-secondary;
+        width: 100%;
+        text-align: left;
+        text-indent: 1.5em;
+    }
+}
+
+
+/*Fin de Main INICIO*/
