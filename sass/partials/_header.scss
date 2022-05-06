@@ -3,10 +3,15 @@
 header {
     width: 100%;
     background-image: map-get($pallete, colorheader);
+    display: flex;
+    flex-direction: row;
     a {
         display: block;
         text-align: center;
         position: relative;
+    }
+    img {
+        width: 100%;
     }
     img:hover {
         transition: 5s;
@@ -16,4 +21,4 @@ header {
 }
 
 
-/*Fin del Header*/
+/*End Header*/

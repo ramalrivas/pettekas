@@ -1,4 +1,4 @@
-.gallery__h1 {
+.high__tittle {
     font-family: $font-primary;
     display: inline-flex;
     align-self: center;
@@ -12,19 +12,15 @@
     }
 }
 
-
-/*Galeria de fotos*/
-
 .gallery {
     display: flex;
-    width: 70%;
+    width: 90%;
     padding: 5px;
     flex-wrap: wrap;
     img {
         width: 100%;
     }
     .gallery__column {
-        width: 100%;
         flex: 25%;
         padding: 5px;
         img {

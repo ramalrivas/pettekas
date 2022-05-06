@@ -42,10 +42,8 @@
         </nav>
 
         <main>
-            <div class="contact__title">
-                <img src="./images/dogclaw.png" alt="icono de garra">
+            <div class="high__tittle">
                 <h1>Turnos</h1>
-                <img src="./images/dogclaw.png" alt="icono de garra">
             </div>
 
             <div class="contact__form">
@@ -54,7 +52,7 @@
                         <h2>Formulario de Turnos</h2>
                     </div>
                     <!-- Nombre Completo -->
-                    <input type="text" id="full_name_id" name="full_name" placeholder="Nombre y Apellido">
+                    <input type="text" id="full_name_id" name="full_name" placeholder="Nombre y Apellido" required>
                     <!-- Domicilio -->
                     <input type="text" id="street1_id" name="street1" placeholder="Calle, Piso, Departamento">
                     <!-- Localidad -->
@@ -62,55 +60,38 @@
                     <!-- Partido-->
                     <input type="text" id="city_id" name="city" placeholder="Ciudad/Partido">
                     <!-- Telefono de Contacto-->
-                    <input type="number" id="zip_id" name="zip" placeholder="Telefono Movil">
+                    <input type="number" id="zip_id" name="zip" placeholder="Telefono Movil" required>
                     <!-- Telefono de Contacto-->
-                    <input type="number " id="zip_id " name="zip " placeholder="Telefono Fijo ">
+                    <input type="number " id="zip_id " name="zip " placeholder="Telefono Fijo " required>
                     <!-- Correo Electronico-->
-                    <input type="email" id="zip_id" name="zip" placeholder="@Correo Electrónico">
+                    <input type="email" id="zip_id" name="zip" placeholder="@Correo Electrónico" required>
                     <!-- Nombre Completo -->
-                    <input type="text" id="full_name_id" name="full_name" placeholder="Nombre de tu Mascota">
+                    <input type="text" id="full_name_id" name="full_name" placeholder="Nombre de tu Mascota" required>
                     <!-- Tipo de Servicio -->
                     <select>
-                                <option selected>Tipo de Servicio</option>
-                                <option value="1">Baño</option>
-                                <option value="2">Baño Medicado</option>
-                                <option value="3">Baño y Corte</option>
-                                <option value="4">Corte de Raza (Incluye Baño)</option>
-                                </select>
+                        <option selected>Tipo de Servicio</option>
+                        <option value="1">Baño</option>
+                        <option value="2">Baño Medicado</option>
+                        <option value="3">Baño y Corte</option>
+                        <option value="4">Corte de Raza (Incluye Baño)</option>
+                    </select>
                     <!-- Tamaño-->
                     <select>
-                                <option selected>Tamaño/Peso</option>
-                                <option value="1">Mini (Hasta 3 kilos)</option>
-                                <option value="2">Pequeño (Hasta 10 kilos)</option>
-                                <option value="3">Mediano (Hasta 20 kilos)</option>
-                                <option value="4">Grande (Hasta 30 kilos)</option>
-                                <option value="5">Gigante (+ de 35 kilos)</option>
-                              </select>
+                        <option selected>Tamaño/Peso</option>
+                        <option value="1">Mini (Hasta 3 kilos)</option>
+                        <option value="2">Pequeño (Hasta 10 kilos)</option>
+                        <option value="3">Mediano (Hasta 20 kilos)</option>
+                        <option value="4">Grande (Hasta 30 kilos)</option>
+                        <option value="5">Gigante (+ de 35 kilos)</option>
+                    </select>
+                    <input type="submit" value="Solicitar Turno" name="submit">
                 </form>
             </div>
 
 
             </div>
 
-            <div class="turn-buttom">
-                <a href="#">Solicitar Turno</a>
-            </div>
-            <div class="ntwkbar">
-                <ul>
 
-                    <li>
-                        <a href="https://wa.me/+541141577907"><img src="./images/ntwk_icon/whatsapp.png" alt="Dejanos un mensaje en WhatsApp"></a>
-                    </li>
-                    <li>
-                        <a href="https://m.me/1515503741836589"><img src="./images/ntwk_icon/messenger.png" alt="Contactate por Messenger"></a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/Petteka-s-1515503741836589"><img src="./images/ntwk_icon/facebook.png" alt="Seguinos en Facebook"></a>
-                    </li>
-                </ul>
-            </div>
-            </ul>
-            </div>
             <div class="locate">
                 <div class="locate__contact">
                     <h3>Ubicación</h3>
@@ -120,9 +101,22 @@
                 <div class="locate__gmap">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d344.8196148945412!2d-58.571380441494796!3d-34.69267986031476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7b5ade4b063%3A0x2699650391e3d746!2sPetteka%C2%B4s%20-%20Peluqueria%20Canina!5e0!3m2!1ses!2sar!4v1642471274300!5m2!1ses!2sar"
                         allowfullscreen="active" loading="lazy" class="gmap__iframe">
-            </iframe>
+                    </iframe>
                 </div>
+                <div class="ntwkbar">
+                    <ul>
 
+                        <li>
+                            <a href="https://wa.me/+541141577907"><img src="./images/ntwk_icon/whatsapp.png" alt="Dejanos un mensaje en WhatsApp"></a>
+                        </li>
+                        <li>
+                            <a href="https://m.me/1515503741836589"><img src="./images/ntwk_icon/messenger.png" alt="Contactate por Messenger"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/Petteka-s-1515503741836589"><img src="./images/ntwk_icon/facebook.png" alt="Seguinos en Facebook"></a>
+                        </li>
+                    </ul>
+                </div>
         </main>
 
         <footer>
@@ -131,7 +125,7 @@
                 <a href="./index.html">
                     <img src="./images/logo.png" alt="pettekas peluqueria canina">
                 </a>
-                <p>TODOS LOS DERECHOS RESERVADOS</p>
+                <p>Creación de Ramiro Rivas. Todos los derechos reservados. Año 2022</p>
             </section>
         </footer>
     </section>

@@ -1,16 +1,21 @@
+/*Network Bar*/
+
 .ntwkbar {
-    position: fixed;
-    width: 5%;
-    z-index: 2000;
-    right: 1vw;
-    top: 50%;
+    width: 100%;
+    background-color: map-get($pallete, colorlocate);
+    padding-left: 5%;
+    padding-bottom: 3%;
     ul {
         list-style: none;
     }
     li {
         padding: 0.5vh;
+        display: inline-flex;
     }
     img {
         width: 5vw;
     }
 }
+
+
+/*End Network Bar*/

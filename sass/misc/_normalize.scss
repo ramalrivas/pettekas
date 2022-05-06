@@ -6,7 +6,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    max-width: 100vw;
+    max-width: 1920px;
     justify-content: center;
     align-items: center;
 }
@@ -17,7 +17,10 @@
 }
 
 
-/*Globales*/
+/* End Reset*/
+
+
+/*Globals*/
 
 p {
     font-size: map-get($fsize, text-p);
@@ -46,3 +49,6 @@ a:visited,
 a:active {
     text-decoration: none;
 }
+
+
+/*End Globals*/

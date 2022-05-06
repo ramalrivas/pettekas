@@ -1,12 +1,12 @@
-/*Header*/
+/*Media Queryes*/
 
 @media only screen and (max-width: 1080px) {
     nav {
         li {
-            font-size: 1.9em;
+            font-size: 1.8em;
         }
     }
-    .encabezado__h1 {
+    .high__tittle {
         h1 {
             font-size: 2.25em;
         }
@@ -15,27 +15,9 @@
             height: 1.5em;
         }
     }
-    #la_pelu__h1 {
-        h1 {
-            font-size: 1.6em;
-        }
-        img {
-            width: 1.5em;
-            height: 1.5em;
-        }
-    }
-    #service__h1 {
-        h1 {
-            font-size: 1.6em;
-        }
-        img {
-            width: 1.5em;
-            height: 1.5em;
-        }
-    }
     .main__bloque1 {
         h2 {
-            font-size: 2.2em;
+            font-size: 3em;
         }
         p {
             font-size: 1em;
@@ -43,7 +25,39 @@
     }
     .main__bloque2 {
         h2 {
-            font-size: 2.2em;
+            font-size: 3em;
+        }
+        p {
+            font-size: 1em;
+        }
+    }
+    .pelu__bloque1 {
+        h2 {
+            font-size: 3em;
+        }
+        p {
+            font-size: 1em;
+        }
+    }
+    .pelu__bloque2 {
+        h2 {
+            font-size: 3em;
+        }
+        p {
+            font-size: 1em;
+        }
+    }
+    .service1 {
+        h2 {
+            font-size: 3em;
+        }
+        p {
+            font-size: 1em;
+        }
+    }
+    .service2 {
+        h2 {
+            font-size: 3em;
         }
         p {
             font-size: 1em;
@@ -58,6 +72,14 @@
         padding: 0.625rem;
         width: 40%;
     }
+    .ntwkbar {
+        img {
+            width: 7.5vw;
+        }
+    }
+    footer {
+        font-size: 1.2em;
+    }
 }
 
 @media only screen and (max-width: 720px) {
@@ -66,34 +88,13 @@
             font-size: 1.7em;
         }
     }
-    #service__h1 {
-        img {
-            width: 0.9em;
-            height: 0.9em;
-        }
-        h1 {
-            font-size: 1.1em;
-        }
-    }
-    #la_pelu__h1 {
-        img {
-            width: 0.9em;
-            height: 0.9em;
-        }
-        h1 {
-            font-size: 1.1em;
-        }
-    }
-    .encabezado__h1 {
-        img {
-            width: 1.3em;
-            height: 1.3em;
-        }
+    .high__tittle {
         h1 {
             font-size: 1.3em;
         }
     }
     .main__bloque1 {
+        max-width: 90%;
         picture {
             max-width: 100%;
         }
@@ -105,6 +106,7 @@
         }
     }
     .main__bloque2 {
+        max-width: 90%;
         picture {
             max-width: 100%;
         }
@@ -115,114 +117,191 @@
             font-size: 1.1em;
         }
     }
-    /*localización y mapa*/
+    .pelu__bloque1 {
+        max-width: 90%;
+        picture {
+            max-width: 100%;
+        }
+        h2 {
+            font-size: 2em;
+        }
+        p {
+            font-size: 1.1em;
+        }
+    }
+    .pelu__bloque2 {
+        max-width: 90%;
+        picture {
+            max-width: 100%;
+        }
+        h2 {
+            font-size: 2em;
+        }
+        p {
+            font-size: 1.1em;
+        }
+    }
+    .service1 {
+        max-width: 90%;
+        picture {
+            max-width: 100%;
+        }
+        h2 {
+            font-size: 2em;
+        }
+        p {
+            font-size: 1.1em;
+        }
+    }
+    .service2 {
+        max-width: 90%;
+        picture {
+            max-width: 100%;
+        }
+        h2 {
+            font-size: 2em;
+        }
+        p {
+            font-size: 1.1em;
+        }
+    }
     .locate {
         flex-direction: column;
+        .locate picture {
+            width: 90%;
+        }
+        .locate__contact {
+            max-width: 90%;
+        }
     }
-    .locate picture {
-        width: 90%;
+    .ntwkbar {
+        img {
+            width: 5vw;
+        }
     }
-    .locate-contact {
-        width: 90%;
+    footer {
+        font-size: 1.1em;
     }
 }
 
 @media only screen and (max-width: 640px) {
     nav {
-        ul {
-            padding: 0;
-            margin-bottom: 0px;
-        }
         li {
-            font-size: 1.25em;
-            padding: 5px 5px;
+            font-size: 1.5em;
         }
+    }
+    .locate {
+        .locate__contact {
+            width: 95%;
+            h3 {
+                font-size: 2em;
+            }
+            li {
+                font-size: map-get($fsize, text-p);
+            }
+            a {
+                font-size: 1.1em;
+            }
+        }
+    }
+    .ntwkbar {
+        img {
+            width: 7vw;
+        }
+    }
+    footer {
+        font-size: 0.9em;
     }
 }
 
 @media only screen and (max-width: 480px) {
     header {
         img {
-            width: 40%;
+            width: 50%;
         }
     }
     nav {
-        ul {
-            padding: 0;
-            margin-bottom: 0px;
-        }
         li {
-            font-size: 1.2em;
-            padding: 2px 2px;
+            font-size: 1em;
         }
     }
-    #la_pelu__h1 {
+    .high__tittle {
         width: 100%;
-        img {
-            width: 0.7em;
-            height: 0.7em;
-        }
-        h1 {
-            font-size: 0.95em;
-        }
-    }
-    #service__h1 {
-        width: 100%;
-        img {
-            width: 0.7em;
-            height: 0.7em;
-        }
-        h1 {
-            font-size: 0.95em;
-        }
-    }
-    .encabezado__h1 {
-        width: 100%;
-        img {
-            width: 1em;
-            height: 1em;
-        }
         h1 {
             font-size: 1.2em;
         }
     }
     .main__bloque1 {
-        picture {
-            max-width: 100%;
-        }
         h2 {
-            font-size: 1.8em;
+            font-size: 1.6em;
         }
         p {
             font-size: 1em;
         }
     }
     .main__bloque2 {
-        picture {
-            max-width: 100%;
-        }
         h2 {
-            font-size: 1.8em;
+            font-size: 1.6em;
         }
         p {
             font-size: 1em;
         }
     }
-    /*localización y mapa*/
-    .locate picture {
-        width: 90%;
-    }
-    .locate-contact {
-        width: 95%;
-        h3 {
-            font-size: 1.2em;
+    .pelu__bloque1 {
+        h2 {
+            font-size: 1.6em;
         }
-        li {
+        p {
             font-size: 1em;
         }
-        a {
-            font-size: 1.1em;
+    }
+    .pelu__bloque2 {
+        h2 {
+            font-size: 1.6em;
         }
+        p {
+            font-size: 1em;
+        }
+    }
+    .service1 {
+        h2 {
+            font-size: 1.6em;
+        }
+        p {
+            font-size: 1em;
+        }
+    }
+    .service2 {
+        h2 {
+            font-size: 1.6em;
+        }
+        p {
+            font-size: 1em;
+        }
+    }
+    .turn-buttom {
+        a {
+            font-size: 2.3em;
+        }
+    }
+    .locate {
+        .locate__contact {
+            width: 95%;
+            h3 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1em;
+            }
+        }
+    }
+    .ntwkbar {
+        img {
+            width: 8vw;
+        }
+    }
+    footer {
+        font-size: 0.8em;
     }
 }
 
@@ -238,27 +317,7 @@
             padding: 2px 2px;
         }
     }
-    #la_pelu__h1 {
-        width: 100%;
-        h1 {
-            font-size: 0.8em;
-        }
-        img {
-            width: 0.5em;
-            height: 0.5em;
-        }
-    }
-    #service__h1 {
-        width: 100%;
-        h1 {
-            font-size: 0.8em;
-        }
-        img {
-            width: 0.5em;
-            height: 0.5em;
-        }
-    }
-    .encabezado__h1 {
+    .high__tittle {
         width: 100%;
         h1 {
             font-size: 1em;
@@ -284,11 +343,55 @@
             font-size: 0.8em;
         }
     }
-    /*localización y mapa*/
-    .locate {
-        .locate-contact {
-            width: 90%;
+    .pelu__bloque1 {
+        h2 {
+            font-size: 1.3em;
         }
+        p {
+            font-size: 0.8em;
+        }
+    }
+    .pelu__bloque2 {
+        h2 {
+            font-size: 1.3em;
+        }
+        p {
+            font-size: 0.8em;
+        }
+    }
+    .service1 {
+        h2 {
+            font-size: 1.3em;
+        }
+        p {
+            font-size: 0.8em;
+        }
+    }
+    .service2 {
+        h2 {
+            font-size: 1.3em;
+        }
+        p {
+            font-size: 0.8em;
+        }
+    }
+    .locate {
+        .locate__contact {
+            h3 {
+                font-size: 1.3em;
+            }
+            p {
+                font-size: 0.8em;
+            }
+        }
+    }
+    .ntwkbar {
+        img {
+            width: 12vw;
+        }
+    }
+    footer {
+        font-size: 0.7em;
     }
 }
 
@@ -304,23 +407,7 @@
             padding: 0.5px 0.5px;
         }
     }
-    #la_pelu__h1 {
-        font-size: 1.8em;
-        width: 100%;
-        img {
-            width: 1em;
-            height: 1em;
-        }
-    }
-    #service__h1 {
-        font-size: 1.8em;
-        width: 100%;
-        img {
-            width: 1em;
-            height: 1em;
-        }
-    }
-    .encabezado__h1 {
+    .high__tittle {
         font-size: 2.5em;
         width: 100%;
         img {
@@ -333,10 +420,10 @@
             max-width: 100%;
         }
         h2 {
-            font-size: 1.3em;
+            font-size: 1.1em;
         }
         p {
-            font-size: 1em;
+            font-size: 0.7em;
         }
     }
     .main__bloque2 {
@@ -344,81 +431,161 @@
             max-width: 100%;
         }
         h2 {
-            font-size: 1.3em;
+            font-size: 1.1em;
+        }
+        p {
+            font-size: 0.7em;
+        }
+    }
+    .pelu__bloque1 {
+        picture {
+            max-width: 100%;
+        }
+        h2 {
+            font-size: 1.1em;
+        }
+        p {
+            font-size: 0.7em;
+        }
+    }
+    .pelu__bloque2 {
+        picture {
+            max-width: 100%;
+        }
+        h2 {
+            font-size: 1.1em;
+        }
+        p {
+            font-size: 0.7em;
+        }
+    }
+    .service1 {
+        picture {
+            max-width: 100%;
+        }
+        h2 {
+            font-size: 1.1em;
+        }
+        p {
+            font-size: 0.7em;
+        }
+    }
+    .service2 {
+        picture {
+            max-width: 100%;
+        }
+        h2 {
+            font-size: 1.1em;
+        }
+        p {
+            font-size: 0.7em;
+        }
+    }
+    .turn-buttom {
+        margin-bottom: -20px;
+        a {
+            font-size: 1.7em;
+        }
+    }
+    footer {
+        font-size: 0.7em;
+        img {
+            width: 60%;
+        }
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    /*Samsung Fold*/
+    header {
+        img {
+            width: 60%;
+        }
+    }
+    nav {
+        li {
+            font-size: 0.75em;
+            padding: 0.5px 0.5px;
+        }
+    }
+    .high__tittle {
+        h1 {
+            font-size: 0.9em;
+        }
+    }
+    .main__bloque1 {
+        h2 {
+            font-size: 1.1em;
         }
         p {
             font-size: 1em;
         }
     }
-    .locate {
-        flex-direction: column;
-        .locate-contact {
-            width: 90%;
+    .main__bloque2 {
+        h2 {
+            font-size: 1.1em;
+        }
+        p {
+            font-size: 1em;
         }
     }
-    @media only screen and (max-width: 280px) {
-        /*Samsung Fold*/
-        header {
-            img {
-                width: 50%;
-            }
+    .pelu__bloque1 {
+        h2 {
+            font-size: 1.16em;
         }
-        nav {
-            li {
+        p {
+            font-size: 0.73em;
+        }
+    }
+    .pelu__bloque2 {
+        padding-bottom: 1.6em;
+        h2 {
+            font-size: 1.16em;
+        }
+        p {
+            font-size: 0.73em;
+        }
+    }
+    .service1 {
+        h2 {
+            font-size: 1.4em;
+        }
+        p {
+            font-size: 0.8em;
+        }
+    }
+    .service2 {
+        h2 {
+            font-size: 1.4em;
+        }
+        p {
+            font-size: 0.8em;
+        }
+    }
+    .turn-buttom {
+        margin-bottom: -20px;
+        a {
+            font-size: 1.6em;
+        }
+    }
+    .locate {
+        padding-top: 2.8em;
+        .locate__contact {
+            h3 {
+                font-size: 1.2em;
+            }
+            p {
                 font-size: 0.8em;
-                padding: 0.5px 0.5px;
             }
         }
-        #la_pelu__h1 {
-            img {
-                width: 0.8em;
-                height: 0.8em;
-            }
-            h1 {
-                font-size: 1.1em;
-            }
-        }
-        #service__h1 {
-            img {
-                width: 0.8em;
-                height: 0.8em;
-            }
-            h1 {
-                font-size: 1.1em;
-            }
-        }
-        .encabezado__h1 {
-            h1 {
-                font-size: 1em;
-            }
-            img {
-                width: 0.7em;
-                height: 0.7em;
-            }
-        }
-        .main__bloque1 {
-            h2 {
-                font-size: 1.1em;
-            }
-            p {
-                font-size: 1em;
-            }
-        }
-        .main__bloque2 {
-            h2 {
-                font-size: 1.1em;
-            }
-            p {
-                font-size: 1em;
-            }
-        }
-        .locate {
-            li {
-                font-size: 1em;
-            }
-            a {
-                font-size: 1em;
-            }
+    }
+    footer {
+        font-size: 0.6em;
+        img {
+            width: 50%;
         }
     }
 }
+
+
+/*End Media Queryes*/

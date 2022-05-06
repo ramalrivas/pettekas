@@ -1,12 +1,13 @@
+/*Locate*/
+
 .locate {
     display: flex;
     flex-direction: column;
     background-color: map-get($pallete, colorlocate);
     padding-top: 3.8rem;
-    padding-bottom: 1.25rem;
-    width: 100vw;
+    width: 100%;
     .locate__contact {
-        width: 68%;
+        width: 90%;
         h3 {
             text-align: left;
             font-family: $font-primary;
@@ -21,11 +22,14 @@
     .locate__gmap {
         overflow: hidden;
         height: 50vh;
-        width: 68%;
-        margin-bottom: 50px;
+        width: 90%;
+        margin-bottom: 6px;
         iframe {
             height: 100%;
             width: 100%;
         }
     }
 }
+
+
+/*End Locate*/

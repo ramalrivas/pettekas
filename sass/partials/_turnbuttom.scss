@@ -1,3 +1,5 @@
+/*Turn Buttom*/
+
 .turn-buttom {
     background-color: map-get($pallete, colorturnbtm);
     border-radius: 5px;
@@ -19,3 +21,6 @@
         color: map-get($pallete, colorturn);
     }
 }
+
+
+/* End Turn Buttom*/

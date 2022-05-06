@@ -1,18 +1,18 @@
-/*Menu de Navegación*/
+/*Navigator Menu*/
 
 nav {
-    width: 100vw;
+    width: 100%;
     background-color: map-get($pallete, colornav);
     ul {
-        display: block;
-        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
     li {
         display: inline-block;
-        padding: 5px 23px;
         font-family: $font-primary;
-        ;
-        text-align: center;
         font-weight: bold;
         font-size: map-get($fsize, text-nav);
         color: map-get($pallete, colormenu);
@@ -32,4 +32,4 @@ nav {
 }
 
 
-/*fin del Menu de Navegación*/
+/*End Navigator Menu*/

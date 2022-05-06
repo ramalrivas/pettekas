@@ -1,4 +1,4 @@
-.service__h1 {
+.high__tittle {
     font-family: $font-primary;
     ;
     display: inline-flex;
@@ -16,7 +16,7 @@
 .service1 {
     @include flex-column-center();
     padding: 0.313rem;
-    max-width: 69%;
+    max-width: 90%;
     picture {
         max-width: 100%;
     }
@@ -43,7 +43,7 @@
     @include flex-column-center();
     padding: 0.313rem;
     padding-bottom: 3rem;
-    max-width: 69%;
+    max-width: 90%;
     picture {
         max-width: 100%;
     }
