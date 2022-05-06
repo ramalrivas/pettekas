@@ -63,6 +63,14 @@
             font-size: 1em;
         }
     }
+    .contact__form {
+        .contact__form__h2 h2 {
+            font-size: 2.8em;
+        }
+        input[type=submit] {
+            font-size: 1.4em;
+        }
+    }
     .locate {
         picture {
             width: 46%;
@@ -165,6 +173,14 @@
             font-size: 1.1em;
         }
     }
+    .contact__form {
+        .contact__form__h2 h2 {
+            font-size: 2.4em;
+        }
+        input[type=submit] {
+            font-size: 1.2em;
+        }
+    }
     .locate {
         flex-direction: column;
         .locate picture {
@@ -187,20 +203,25 @@
 @media only screen and (max-width: 640px) {
     nav {
         li {
-            font-size: 1.5em;
+            font-size: 1.3em;
+        }
+    }
+    .contact__form {
+        .contact__form__h2 h2 {
+            font-size: 1.95em;
+        }
+        input[type=submit] {
+            font-size: 0.9em;
         }
     }
     .locate {
         .locate__contact {
             width: 95%;
             h3 {
-                font-size: 2em;
+                font-size: 1.8em;
             }
-            li {
-                font-size: map-get($fsize, text-p);
-            }
-            a {
-                font-size: 1.1em;
+            p {
+                font-size: 1em;
             }
         }
     }
@@ -279,6 +300,15 @@
             font-size: 1em;
         }
     }
+    .contact__form {
+        .contact__form__h2 h2 {
+            font-size: 1.5em;
+        }
+        input[type=submit] {
+            width: 45%;
+            font-size: 0.8em;
+        }
+    }
     .turn-buttom {
         a {
             font-size: 2.3em;
@@ -288,10 +318,10 @@
         .locate__contact {
             width: 95%;
             h3 {
-                font-size: 2em;
+                font-size: 1.7em;
             }
             p {
-                font-size: 1em;
+                font-size: 0.8em;
             }
         }
     }
@@ -373,6 +403,17 @@
         }
         p {
             font-size: 0.8em;
+        }
+    }
+    .contact__form {
+        .contact__form__h2 h2 {
+            font-size: 1.2em;
+        }
+        input[type=submit] {
+            width: 50%;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-top: 10px;
         }
     }
     .locate {
@@ -479,6 +520,17 @@
         }
         p {
             font-size: 0.7em;
+        }
+    }
+    .contact__form {
+        .contact__form__h2 h2 {
+            font-size: 1em;
+        }
+        input[type=submit] {
+            width: 50%;
+            font-size: 0.6em;
+            font-weight: bold;
+            margin-top: 10px;
         }
     }
     .turn-buttom {

@@ -42,11 +42,44 @@
         padding: 2%;
     }
     input[type=submit] {
+        background-color: map-get($pallete, colorturnbtm);
+        cursor: pointer;
+        border: 0;
         margin: 20px;
-        font-family: $font-secondary;
-        font-size: map-get($fsize, text-h3);
+        font-family: $font-primary;
+        font-size: 1.9em;
         font-weight: bold;
         border-radius: 20px;
         width: 35%;
+        animation: btmsummit 10s linear 2s infinite normal forwards;
+    }
+    input[type=submit]:hover {
+        color: #fff;
+    }
+    @keyframes btmsummit {
+        0%,
+        100% {
+            transform: rotate(0deg);
+            transform-origin: 50% 100%;
+        }
+        10% {
+            transform: rotate(2deg);
+        }
+        20%,
+        40%,
+        60% {
+            transform: rotate(-4deg);
+        }
+        30%,
+        50%,
+        70% {
+            transform: rotate(4deg);
+        }
+        80% {
+            transform: rotate(-2deg);
+        }
+        90% {
+            transform: rotate(2deg);
+        }
     }
 }

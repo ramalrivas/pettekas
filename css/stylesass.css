@@ -122,7 +122,7 @@ nav {
   width: fit-content;
   position: relative;
   margin: auto;
-  margin-bottom: -34px;
+  margin-bottom: -30px;
   box-shadow: 3px 3px 3px 3px; }
   .turn-buttom a {
     font-family: "Fredoka", sans-serif;
@@ -377,12 +377,38 @@ nav {
     width: 63%;
     padding: 2%; }
   .contact__form input[type=submit] {
+    background-color: #81adc8;
+    cursor: pointer;
+    border: 0;
     margin: 20px;
-    font-family: "Roboto", sans-serif;
-    font-size: 2.5em;
+    font-family: "Fredoka", sans-serif;
+    font-size: 1.9em;
     font-weight: bold;
     border-radius: 20px;
-    width: 35%; }
+    width: 35%;
+    animation: btmsummit 10s linear 2s infinite normal forwards; }
+  .contact__form input[type=submit]:hover {
+    color: #fff; }
+
+@keyframes btmsummit {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 100%; }
+  10% {
+    transform: rotate(2deg); }
+  20%,
+  40%,
+  60% {
+    transform: rotate(-4deg); }
+  30%,
+  50%,
+  70% {
+    transform: rotate(4deg); }
+  80% {
+    transform: rotate(-2deg); }
+  90% {
+    transform: rotate(2deg); } }
 
 /*locate*/
 /*Locate*/
@@ -390,7 +416,7 @@ nav {
   display: flex;
   flex-direction: column;
   background-color: #cd4631;
-  padding-top: 3.8rem;
+  padding-top: 3.3rem;
   width: 100%; }
   .locate .locate__contact {
     width: 90%; }
@@ -469,6 +495,10 @@ footer {
     font-size: 3em; }
   .service2 p {
     font-size: 1em; }
+  .contact__form .contact__form__h2 h2 {
+    font-size: 2.8em; }
+  .contact__form input[type=submit] {
+    font-size: 1.4em; }
   .locate picture {
     width: 46%; }
   .locate-contact {
@@ -532,6 +562,10 @@ footer {
       font-size: 2em; }
     .service2 p {
       font-size: 1.1em; }
+  .contact__form .contact__form__h2 h2 {
+    font-size: 2.4em; }
+  .contact__form input[type=submit] {
+    font-size: 1.2em; }
   .locate {
     flex-direction: column; }
     .locate .locate picture {
@@ -545,15 +579,17 @@ footer {
 
 @media only screen and (max-width: 640px) {
   nav li {
-    font-size: 1.5em; }
+    font-size: 1.3em; }
+  .contact__form .contact__form__h2 h2 {
+    font-size: 1.95em; }
+  .contact__form input[type=submit] {
+    font-size: 0.9em; }
   .locate .locate__contact {
     width: 95%; }
     .locate .locate__contact h3 {
-      font-size: 2em; }
-    .locate .locate__contact li {
-      font-size: 1.3em; }
-    .locate .locate__contact a {
-      font-size: 1.1em; }
+      font-size: 1.8em; }
+    .locate .locate__contact p {
+      font-size: 1em; }
   .ntwkbar img {
     width: 7vw; }
   footer {
@@ -592,14 +628,19 @@ footer {
     font-size: 1.6em; }
   .service2 p {
     font-size: 1em; }
+  .contact__form .contact__form__h2 h2 {
+    font-size: 1.5em; }
+  .contact__form input[type=submit] {
+    width: 45%;
+    font-size: 0.8em; }
   .turn-buttom a {
     font-size: 2.3em; }
   .locate .locate__contact {
     width: 95%; }
     .locate .locate__contact h3 {
-      font-size: 2em; }
+      font-size: 1.7em; }
     .locate .locate__contact p {
-      font-size: 1em; }
+      font-size: 0.8em; }
   .ntwkbar img {
     width: 8vw; }
   footer {
@@ -644,6 +685,13 @@ footer {
     font-size: 1.3em; }
   .service2 p {
     font-size: 0.8em; }
+  .contact__form .contact__form__h2 h2 {
+    font-size: 1.2em; }
+  .contact__form input[type=submit] {
+    width: 50%;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-top: 10px; }
   .locate .locate__contact h3 {
     font-size: 1.3em; }
   .locate .locate__contact p {
@@ -701,6 +749,13 @@ footer {
     font-size: 1.1em; }
   .service2 p {
     font-size: 0.7em; }
+  .contact__form .contact__form__h2 h2 {
+    font-size: 1em; }
+  .contact__form input[type=submit] {
+    width: 50%;
+    font-size: 0.6em;
+    font-weight: bold;
+    margin-top: 10px; }
   .turn-buttom {
     margin-bottom: -20px; }
     .turn-buttom a {
